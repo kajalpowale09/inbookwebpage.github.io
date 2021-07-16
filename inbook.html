@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <title> INBOOK </title>
+	 
+	<!------------------------------------CSS STYLE----------------------------->
+	<style>
+	   * {
+          box-sizing: border-box;
+		  width:100%;
+		  font-family: "Lucida Sans", sans-serif;
+         }
+	    .container{
+		     width:100%;
+			 min-height:100vh;
+			 padding-left:8%;
+			 padding-right:8%;
+			 box-sizing:border-box;
+			 overflow:hidden;
+			 }
+			 .lorem{
+			 margin-left:10px;
+			 }
+			 .text{
+           text-align:center;
+	      
+	       text:bold;
+	       margin-top:18px;
+	       margin-right:300px;
+	       font-size:16px;
+	       padding-right:476px;
+		  }
+		   .aside{
+		      margin-left: 815px;
+              font-size: 7px;
+               margin-top: -140px;
+			   display:none;
+			  }
+			  .raside{
+			 margin-left: 486px;
+              font-size: 7px;
+               margin-top: -140px;
+			  }
+			  
+			.nav{
+                margin-top: -368px;
+                margin-left: -6px;
+                }
+				 ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+
+			}
+
+			li a {
+			  display: block;
+			  color: #000;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			  margin-top:26px;
+			}
+
+			/* Change the link color on hover */
+			li a:hover {
+			  background-color: #555;
+			  color: white;
+			}
+
+						  .name{
+							 margin-top:10px;
+							 }
+					   .button
+							{
+						 background-color: red;
+						  border: none;
+							color: white;
+						 padding: 21px;
+						text-align: center;
+						 text-decoration: none;
+						 display: inline-block;
+						font-size: 16px;
+					   margin: 27px 2px;
+					  cursor: pointer;
+						 width: 130px;
+					   height: 60px;
+						border-radius:26px;
+						}
+						  
+				
+			.square img
+			{
+			width: 121px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-left: 5px;
+				margin-top: -11px;
+			}
+			.square{
+				  height: 194px;
+				width: 167px;
+				background-color: rgb(270, 270, 270);
+				margin-left: 151px;
+				margin-top: 85px;
+				display: inline-block;
+				position: relative;
+				border-radius: 29px;
+				padding: 20px;
+				box-shadow: 10px 10px grey;
+			}
+			.h1
+				{
+				font-size: 16px;
+				margin-top: 22px;
+				margin-left:20px;
+
+				}
+				.pizza{
+				margin-left: 14px;
+				margin-top: -184px;
+				height: 194px;
+				width: 167px;
+				background-color: rgb(270, 270, 270);
+				display: inline-block;
+				position: relative;
+				border-radius: 29px;
+				padding: 20px;
+				box-shadow: 10px 10px grey;
+				}
+				.pizza img{
+			width: 121px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-left: 5px;
+				margin-top: -11px;
+			}
+			.burger{
+				 margin-left: 14px;
+				margin-top: -184px;
+				height: 194px;
+				width: 167px;
+				background-color: rgb(270, 270, 270);
+				display: inline-block;
+				position: relative;
+				border-radius: 29px;
+				padding: 20px;
+				box-shadow: 10px 10px grey;
+				}
+				
+				.burger img{
+				width: 121px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-left: 5px;
+				margin-top: -11px;
+				}
+				
+				.noodle{
+				 margin-left: 14px;
+				margin-top: -184px;
+				height: 194px;
+				width: 167px;
+				background-color: rgb(270, 270, 270);
+				display: inline-block;
+				position: relative;
+				border-radius: 29px;
+				padding: 20px;
+				box-shadow: 10px 10px grey;
+				}
+				.noodle img{
+				   width: 121px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-left: 5px;
+				margin-top: -11px;
+				}
+				.hakka{
+				   margin-left: 14px;
+				margin-top: -184px;
+				height: 194px;
+				width: 167px;
+				background-color: rgb(270, 270, 270);
+				display: inline-block;
+				position: relative;
+				border-radius: 29px;
+				padding: 20px;
+				box-shadow: 10px 10px grey;
+				}
+				.hakka img
+				{
+				   width: 121px;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-left: 5px;
+				margin-top: -11px;
+				}
+				.navimg{
+						  width: 67px;
+						   height: 30px;
+						   display:none;
+					
+						  }
+				.assc{
+				display:none;
+	}
+	<!------------------------------MOBILE VIEW--------------------------------------------------->
+	     
+		 @/* For mobile phones: */
+[class*="col-"] {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 700px)
+        {
+             .lorem{
+               margin-left: 106px !important;
+               font-size: 11px;
+	              }
+			 .text{
+			      margin-left: 47px;
+                  font-size: 13px;
+                  display: contents;
+				   }
+				   
+				   .nav{
+				   display:none !important;
+				   }
+				   
+				    .square{
+				   margin-left: -13px;
+					height: 190px;
+					width: 151px;
+					margin-top: 45px;
+				   }
+				   .square img{
+				         width: 107px;
+                         height: 107px;
+						 }
+				   .pizza img{
+				         width: 107px;
+                         height: 107px;
+						 }
+				    .noodle img{
+				         width: 107px;
+                         height: 107px;
+						 }
+					.burger img{
+				         width: 107px;
+                         height: 107px;
+						 }
+				   
+				   .pizza{
+				  margin-left: 150px;
+               height: 187px;
+				width: 148px;
+				display: block;
+				   }
+				   
+				    .burger{
+					 
+				   margin-inline: auto;
+                 margin-left: -14px;
+                 margin-top: 29px;
+                 height: 187px;
+				 width: 148px;
+				   }
+				    .noodle{
+				   height: 187px;
+				 width: 148px;
+				 margin-left:8px;
+				   }
+				    .hakka{
+				   display:none;
+				   }
+				   
+				   .h1{
+				   font-size: 13px;
+                  text-align: -webkit-auto;
+				   }
+				    .h2{
+					   font-size: 12px;
+						text-align: -webkit-auto;
+						margin-top: 19px;
+				   }
+				    .h3{
+				   font-size: 13px;
+                  text-align: -webkit-auto;
+				   }
+				    .h4{
+				   font-size: 13px;
+                  text-align: -webkit-auto;
+				   }
+				   .ip{
+				   display:none;
+				   }
+				   .aside{
+		            margin-left: 15px;
+                    padding-top: 169px;
+					display:block;
+                  
+			        }
+			  .navimg{
+			      display:block;
+				  margin-left:-136px;
+			  }
+			  .assc{
+			      display: block;
+						margin-left: -104px;
+						width: 30px;
+						margin-left: 166px;
+						margin-top: -30px;
+			  }
+			  
+			  
+			  
+	    }
+</style>
+</head>
+<body>
+     <div class='container'>
+	      <div class='lorem'>
+		  <img src='navimg.jpg' alt='f2' class='navimg'>
+		  <img src='assc.jpg' alt='f2' class='assc'>
+		    <h1>Lorem</h1>
+			<h1 class='ip' style='margin-top:-21px;'>Ipsum</h1><br>
+			  
+		  </div>
+		  
+		  <div class='text'>
+              <h1>What are you
+			
+			           <br>&nbsp;&nbsp;&nbsp;having for lunch?</h1>
+					     <div class='raside'>
+                                <h1>&nbsp;Lorem ipsem dolor sit amet,<br>consecture adiplicing elit<br>sed do euismod tempor<br>incidiunt ut labore et.<br><br>
+			                    <hr style='width:50px;border-color:red;margin-left:250px';></h1>
+                         </div>
+				 </div>
+		 
+		 
+		<!-----------------------------------image block------------------------------------->  
+		   <div class='square'>
+             <img src='maxicon.jpg' alt='f1'>
+			 <h6 class='h1'>Mexican Taco</h6>
+			 </div>
+			 
+			 <div class='pizza'>
+			 <img src='pizza.jpg' alt='f1'>
+			 <h6 class='h2'>Farmhouse pizza</h5>
+			 </div>
+			 
+			 <div class='burger'>
+		     <img src='burger.jpg' alt='f1'>
+			 <h4 class='h3'>Chicken Burger</h6>
+		   </div>
+			 
+			<div class='noodle'>
+		     <img src='loaded.jpg' alt='f1'>
+			 <h4 class='h4'>Loaded Nachos</h6>
+		   </div>
+		   
+		     <div class='hakka'>
+		     <img src='noddles.jpg' alt='f1'>
+			 <h4 class='exi4'>Hakka Noodles</h6>
+		   </div>
+		   
+		     <div class='aside'>
+            <h1> Lorem ipsem dolor sit amet,<br>consecture adiplicing elit<br>sed do euismod tempor<br>incidiunt ut labore et.<br><br>
+			<hr style='width:50px;border-color:red;margin-left:0px';></h1>
+         </div>
+         
+	<!-----------------------------------navbar---------------------------------->
+	<div>
+   <ul class='nav'>
+  <li class='under'><a href="#home">About</a></li>
+  <li><a href="#service">Services</a></li>
+  <li><a href="#cuisine">Cuisine</a></li>
+  <li><a href="#galery">Gallery</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#book">Book</a></li><br>
+  <button class="button">Card</button>
+</ul>
+</div>
+		   
+	</div>
+	 
+	 
+
+</body>
+</html>
+	 
